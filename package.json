@@ -6,7 +6,8 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
-    "pdf": "mdx-deck pdf deck.mdx"
+    "pdf": "mdx-deck pdf deck.mdx",
+    "build:all": "npm run build && npm run pdf"
   },
   "author": "",
   "license": "ISC",
