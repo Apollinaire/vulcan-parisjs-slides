@@ -7,6 +7,7 @@ import { Image } from 'mdx-deck'
 
 <Head>
   <title>Vulcan.js - The full-stack React+GraphQL framework</title>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </Head>
 
 import Logo from './components/Logo.js'
@@ -192,23 +193,24 @@ const schema = {
 
 
 
-
-
-
-
-
-
 ---
+
+import css from './node_modules/react-github-button/assets/style.css'
+import GithubButton from 'react-github-button';
+
 
 # Thanks! 
 <div>
   <a style={{color:'#33414F', textDecorationColor: 'none'}} href="http://vulcanjs.org" target="_blank">
-    <h1>vulcanjs.org</h1>
+    <h3>vulcanjs.org</h3>
   </a>
   <a style={{color:'#33414F', textDecorationColor: 'none'}} href="https://slack.vulcanjs.org" target="_blank">
-    <h1>slack.vulcanjs.org</h1>
+    <h3>slack.vulcanjs.org</h3>
   </a>
   <a style={{color:'#33414F', textDecorationColor: 'none'}} href="https://github.com/VulcanJS/Vulcan" target="_blank">
-    <h1>github.com/VulcanJS/Vulcan</h1>
+    <h3>github.com/VulcanJS/Vulcan</h3>
   </a>
+  <div style={{width: '100%',marginLeft:'calc(50% - 65px)'}}> 
+    <GithubButton type="stargazers" size="large" namespace="VulcanJS" repo="Vulcan" />
+  </div>
 </div>
