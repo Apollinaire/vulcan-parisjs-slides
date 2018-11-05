@@ -3,16 +3,19 @@ export {vulcan as theme} from './theme';
 import { Invert } from 'mdx-deck/layouts';
 import { Appear } from 'mdx-deck';
 import { Head } from 'mdx-deck';
+import { Image } from 'mdx-deck'
 
 <Head>
-  <title>VulcanJS - The full-stack React+GraphQL framework</title>
+  <title>Vulcan.js - The full-stack React+GraphQL framework</title>
 </Head>
 
 import Logo from './components/Logo.js'
 
 <Logo/>
 
-## VulcanJS - The full-stack React+GraphQL framework
+## VulcanJS
+
+#### The fullstack React+GraphQL framework
 
 7 nov. 2018
 
@@ -22,14 +25,190 @@ Apollinaire Lecocq
 
 export default Invert
 
-# Main title
+# The problem
 
 ---
+
+<img style={{maxWidth:'100vw', maxHeight:'100vh'}} src='./assets/hackernoon.png' />
+
+---
+
+export default Invert
+
+# The solution
+
+---
+
+<img style={{width:'60vw', maxHeight:'100vh'}} src='./assets/standards.png' />
+
+---
+
+export default Invert
+
+# Origin story
+
+---
+
+## Meteor
+
+<img style={{width:'60vw', maxHeight:'100vh'}} src='./assets/meteor.png' />
+
+---
+
+## Discover Meteor
+
+<img style={{width:'60vw', maxHeight:'100vh'}} src='./assets/discoverMeteor.png' />
+
+---
+
+## Telescope
+
+<img style={{width:'60vw', maxHeight:'100vh'}} src='./assets/telescope.png' />
+
+---
+
+export default Invert
+
+# Enter Vulcan.js
+
+---
+
+## So what's Vulcan.js ?
+
+<ul style={{textAlign: 'left'}}>
+<Appear>
+  <li>Fullstack</li>
+  <li>Opinionated</li>
+  <li>Fully customizable</li>
+</Appear>
+</ul>
+
+---
+
+## The Vulcan.js Stack
+
+<img style={{width:'60vw', maxHeight:'100vh'}} src='./assets/stack.png' />
+
+---
+
+export default Invert
+
+# Features
+
+---
+
+## User accounts
+
+<video style={{width:'60vw', maxHeight:'50vh'}} controls>
+  <source src="./assets/accounts.mp4" type="video/mp4"/>
+</video>
+
+---
+
+## GraphQL schema generation
+
+---
+
+## Simple data loading and updating
+
+```js
+const listOptions = {
+  collection: Movies,
+  fragment: fragment
+};
+
+export default withMulti(listOptions)(MoviesList);
+```
+
+---
+
+## Automated forms
+
+```jsx
+<Components.SmartForm collection={Movies} />
+```
+
+```jsx
+<Components.SmartForm 
+  collection={Movies}
+  documentId={this.props.documentId} />
+```
+
+Never code a form again!
+
+---
+
+## Permission system
+
+```js
+const schema = {
+  name: {
+    type: String,
+    label: 'Name',
+    optional: false,
+    canRead: ['guests'],
+    canCreate: ['members'],
+    canUpdate: ['admins', Users.owns]
+  }
+}
+```
+
+---
+
+## Internationalization
+
+<video style={{width:'60vw', maxHeight:'50vh'}} controls>
+  <source src="./assets/i18n.mp4" type="video/mp4"/>
+</video>
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+# Thanks! 
 <div>
-<a style={{color:'black', textDecorationColor: 'none'}} href="https://slack.vulcanjs.org">
-  <h1>slack.vulcanjs.org</h1>
-</a>
-<a style={{color:'black', textDecorationColor: 'none'}} href="https://github.com/VulcanJS/Vulcan">
-  <h1>github.com/VulcanJS/Vulcan</h1>
-</a>
+  <a style={{color:'#33414F', textDecorationColor: 'none'}} href="http://vulcanjs.org" target="_blank">
+    <h1>vulcanjs.org</h1>
+  </a>
+  <a style={{color:'#33414F', textDecorationColor: 'none'}} href="https://slack.vulcanjs.org" target="_blank">
+    <h1>slack.vulcanjs.org</h1>
+  </a>
+  <a style={{color:'#33414F', textDecorationColor: 'none'}} href="https://github.com/VulcanJS/Vulcan" target="_blank">
+    <h1>github.com/VulcanJS/Vulcan</h1>
+  </a>
 </div>
