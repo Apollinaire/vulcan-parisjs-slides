@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
+    "build": "mdx-deck build deck.mdx -d ./",
     "pdf": "mdx-deck pdf deck.mdx",
     "build:all": "npm run build && npm run pdf"
   },
