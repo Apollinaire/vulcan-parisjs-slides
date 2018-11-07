@@ -1,7 +1,7 @@
 export {vulcan as theme} from './theme';
 
 import Section from './layouts/section'
-
+import Link from './components/link';
 import { Invert } from 'mdx-deck/layouts';
 import { Appear } from 'mdx-deck';
 import { Head } from 'mdx-deck';
@@ -210,20 +210,21 @@ Email, newsletter and templates
 import css from './node_modules/react-github-button/assets/style.css'
 import GithubButton from 'react-github-button';
 
+export default Invert
 
 # Questions ?
 
 <div>
-  <a style={{color:'#33414F', textDecorationColor: 'none'}} href="http://vulcanjs.org" target="_blank">
+  <Link href="http://vulcanjs.org" target="_blank">
     <h3>vulcanjs.org</h3>
-  </a>
-  <a style={{color:'#33414F', textDecorationColor: 'none'}} href="https://slack.vulcanjs.org" target="_blank">
+  </Link>
+  <Link href="https://slack.vulcanjs.org" target="_blank">
     <h3>slack.vulcanjs.org</h3>
-  </a>
-  <a style={{color:'#33414F', textDecorationColor: 'none'}} href="https://github.com/VulcanJS/Vulcan" target="_blank">
+  </Link>
+  <Link href="https://github.com/VulcanJS/Vulcan" target="_blank">
     <h3>github.com/VulcanJS/Vulcan</h3>
-  </a>
+  </Link>
   <div style={{width: '100%',marginLeft:'calc(50% - 65px)'}}> 
-    <GithubButton type="stargazers" size="large" namespace="VulcanJS" repo="Vulcan" />
+    <GithubButton style={{color: 'black'}} type="stargazers" size="large" namespace="VulcanJS" repo="Vulcan" />
   </div>
 </div>
