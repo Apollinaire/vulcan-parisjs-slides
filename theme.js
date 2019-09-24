@@ -1,6 +1,5 @@
 import theme from 'mdx-deck/themes';
-import okaidia from 'react-syntax-highlighter/styles/prism/okaidia'
-
+import okaidia from 'react-syntax-highlighter/styles/prism/okaidia';
 
 export const vulcan = {
   ...theme,
