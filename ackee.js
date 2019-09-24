@@ -2,7 +2,7 @@ import * as ackeeTracker from 'ackee-tracker';
 
 ackeeTracker
   .create({
-    server: 'https://example.com',
-    domainId: 'hd11f820-68a1-11e6-8047-79c0c2d9bce0',
+    server: 'https://ackee-apollinaire.now.sh',
+    domainId: 'e784007e-20fd-4978-845a-72bd1f2c6c5d',
   })
   .record();
